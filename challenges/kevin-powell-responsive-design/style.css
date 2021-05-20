@@ -1,0 +1,91 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Roboto:wght@300;400&display=swap');
+
+
+/* Global styles */
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+html, body {
+	font-family: "Roboto";
+}
+
+/* Reusable components */
+.container {
+	display: flex;
+	max-width: 1128px;
+	justify-content: space-between;
+	margin: 0 auto;
+	padding: 5%;
+}
+
+.col {
+	flex-direction: column;
+}
+
+.title-accent {
+	font-family: "Playfair";
+	color: #824936;
+}
+
+
+/* General styles */
+.hero {
+	background: #F3EED9;
+	text-align: center;
+	padding: 9%;
+}
+
+.hero p {
+	font-size: 18px;
+	font-weight: 300;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+
+.hero h1 {
+	font-size: 60px;
+	margin-top: 0.5em;
+}
+
+.info {
+	margin: 3em 0;
+}
+
+.info h2 {
+	font-size: 36px;
+	text-align: center;
+}
+
+.info p {
+	font-size: 21px;
+	color: #222C2A;
+}
+
+.info__text p, 
+.img-section-one .wrapper, 
+.img-section-one img,
+.img-section-two .wrapper, 
+.img-section-two img {
+	width: 46%;
+}
+
+.img-section-one {
+	background: #222C2A;
+	color: #FFF;
+}
+
+.img-section-two {
+	background: #824936;
+	color: #FFF;
+}
+
+.img-section-one h1, 
+.img-section-two h1 {
+	margin-bottom: 1em;
+	color: #FFF;
+}
+
+
