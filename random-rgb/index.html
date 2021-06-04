@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- SEO SEO SEO -->
+  <meta charset="UTF-8">
+  <meta name="language" content="English">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="bLaCkwEw">
+  <title>Random RGB</title>
+  <meta name="description" content="Random RGB colors.">
+  
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+  <div class="flex-parent clr-display">
+    <div id="container"></div>
+  </div>
+
+  <div class="flex-parent" onclick="updateClrCodes()">
+    <div class="btn" onclick="randomR()">Random R</div>
+    <div class="btn" onclick="randomG()">Random G</div>
+    <div class="btn" onclick="randomB()">Random B</div>
+    <div class="btn" onclick="randomAll()">Random All</div>
+
+    <div id="rave" class="btn" onclick="startParty()">Rave Party!</div>
+  </div>
+
+  <div class="flex-parent">
+  <p>Color codes:</p>
+  
+  <ul>
+    <li>Click to copy rgb: <div class="values" id="textForRGB" onclick="copyText(true)">rgb(0, 0, 0)</div></li>
+    <li>Click to copy hex: <div class="values" id="textForHEX" onclick="copyText()">#000000</div></li>
+  </ul>
+  </div>
+
+  <script src="index.js" defer></script>
+</body>
+</html>

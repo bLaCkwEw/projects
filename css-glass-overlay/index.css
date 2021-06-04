@@ -1,0 +1,49 @@
+:root, html, body {
+    background: #ff1111;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: Tahoma, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    width: 90vw;
+    height: 90vh;
+}
+
+/* Code you can copy-paste whenever you need a glass-like thingy on your website */
+.glass {
+    /* width: auto;
+    height: auto; */
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+    border-radius: 40px;
+    box-shadow: inset 5px 5px 10px rgba(255, 255, 255, 0.1), inset -5px -5px 10px rgba(255, 255, 255, 0.1);
+    border: 1px solid #FFFFFF;
+}
+
+/* Positioning for this page */
+.glass {
+    position: absolute;
+    z-index: 5;
+}
+
+/* Shape to show you how things look under the glass */
+.shape {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    background: green;
+    position: absolute;
+    z-index: 4;
+}
