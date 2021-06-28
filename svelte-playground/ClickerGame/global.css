@@ -327,7 +327,6 @@ html,
 body {
   height: 100%;
   width: 100%;
-  overflow: hidden;
 }
 
 #app {
@@ -343,13 +342,6 @@ main {
   flex-grow: 1;
 }
 
-@media (min-width: 600px) {
-  #app {
-    width: 35%;
-    margin: 0 auto;
-  }
-}
-
 .btn {
   background-color: rgba(67, 56, 202);
   color: var(--color);
@@ -357,11 +349,10 @@ main {
   border: 0;
   border-radius: 6px;
   padding: 2rem 4rem;
-  position: relative;
-  z-index: 999;
 }
 
 .btn:active {
   background-color: rgba(55, 48, 163);
   color: rgba(52, 211, 153);
+  box-shadow: inset var(--shadow);
 }
