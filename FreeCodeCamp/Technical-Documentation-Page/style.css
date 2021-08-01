@@ -49,6 +49,7 @@ pre {
   color: #e7246a;
   padding: 5px;
   border-radius: 6px;
+  white-space: pre-wrap;
 }
 
 li {
