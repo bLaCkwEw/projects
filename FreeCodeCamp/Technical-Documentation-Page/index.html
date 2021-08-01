@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main id="main-doc">
+
+        <nav id="navbar">
+            <header>
+                <h1 class="nav-title">
+                    Astro Documentation
+                </h1>
+            </header>
+            <div class="nav-links">
+
+                <a href="#Getting_Started" class="nav-link">Getting Started</a>
+                <a href="#Quick_Start" class="nav-link">Quick Start</a>
+                <a href="#Deploy_your_project" class="nav-link">Deploy your project</a>
+                <a href="#Project_Structure" class="nav-link">Project Structure</a>
+                <a href="#Reference" class="nav-link">Reference</a>
+
+            </div>
+        </nav>
+
+        <div class="wrapper">
+            <section id="Getting_Started" class="main-section">
+                <header>
+                    <h1>Getting Started</h1>
+                </header>
+                <p>
+                    Astro is a modern static site builder. Learn what Astro is all about from <a
+                        href="https://astro.build" target="_blank">our homepage</a> or <a
+                        href="https://astro.build/blog/introducing-astro" target="_blank">
+                        our release post</a>. This page is an overview of the Astro documentation and all related
+                    resources
+                </p>
+                <h2>Try Astro</h2>
+                <p>The easiest way to try Astro is to run <code>npm init astro</code> in a new directory on your
+                    machine.
+                    Our CLI wizard will assist you in starting a new Astro project. </p>
+            </section>
+
+            <section id="Quick_Start" class="main-section">
+                <header>
+                    <h1>Quick Start</h1>
+                </header>
+                <pre>
+# prerequisite: Node.js 12.20.0+, 14.13.1+, or 16+
+node --version
+
+# Make a new project directory, and navigate into it
+mkdir my-astro-project && cd $_
+
+# prepare for liftoff...
+npm init astro
+
+# install dependencies
+npm install
+
+# start developing!
+npm start
+
+# when you're ready: build your static site to `dist/`
+npm run build
+                </pre>
+                <h2>Start your project</h2>
+                <p>
+                    From inside your project directory, enter the following command into your terminal:
+                </p>
+                <pre><code>npm start</code></pre>
+                <p>
+                    Astro will now start serving your application on <a href="http://localhost:3000"
+                        target="_blank">http://localhost:3000</a>. Opening this URL in your
+                    browser, you should see the Astro's "Hello world".
+                </p>
+                <p>
+                    The server will listen for live file changes in your <code>src/</code> directory, so you do not need
+                    to restart the application as you make changes during development.
+                </p>
+                <h2>Build your project</h2>
+                <p>
+                    To build your project, from inside your directory enter the following build command into your
+                    terminal:
+                </p>
+                <pre><code>npm run build</code></pre>
+                <p>
+                    This will instruct Astro to build your site and save it directly to disk. Your application is now
+                    ready in the <code>dist/</code> directory.
+                </p>
+            </section>
+
+            <section id="Deploy_your_project" class="main-section">
+                <header>
+                    <h1>Deploy your project</h1>
+                </header>
+                <p>Astro sites are static, so they can be deployed to your favourite host:</p>
+                <ul>
+                    <li><a href="https://vercel.com" target="_blank">Vercel</a></li>
+                    <li><a href="https://www.netlify.com" target="_blank">Netlify</a></li>
+                    <li><a href="https://aws.amazon.com/s3/" target="_blank">S3 bucket</a></li>
+                    <li><a href="https://firebase.google.com" target="_blank">Google Firebase</a></li>
+                    <li><a href="https://deta.sh" target="_blank">Deta</a></li>
+                </ul>
+            </section>
+
+            <section id="Project_Structure" class="main-section">
+                <header>
+                    <h1>Project Structure</h1>
+                </header>
+                <p>
+                    Astro includes an opinionated folder layout for your project. Every Astro project must include these
+                    directories and files:
+                </p>
+                <ul>
+                    <li><code>src/*</code> - Your project source code (components, pages, etc.)</li>
+                    <li><code>public/*</code> - Your non-code assets (fonts, icons, etc.)</li>
+                    <li><code>package.json</code> - A project manifest.</li>
+                </ul>
+                <pre>
+├── src/
+│   ├── components/
+│   ├── layouts/
+│   └── pages/
+│       └── index.astro
+├── public/
+└── package.json
+                </pre>
+            </section>
+            <section id="Reference" class="main-section">
+                <header>
+                    <h1>Reference</h1>
+                </header>
+                <p>
+                    All the documentation in this page is taken (and lightly modified) from
+                    <a href="https://docs.astro.build/getting-started" target="_blank">
+                        Astro's documentation
+                    </a>.
+                </p>
+            </section>
+        </div>
+
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    </main>
+</body>
+
+</html>
