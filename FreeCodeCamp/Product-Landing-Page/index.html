@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Product landing page</title>
+</head>
+
+<body>
+    <header id="header">
+        <a href="/">
+            <img src="/acme-logo.svg" alt="Logo" id="header-img">
+        </a>
+        <nav id="nav-bar">
+            <a href="#Our-Mission" class="nav-link">Our Mission</a>
+            <a href="#Showcase" class="nav-link">Showcase</a>
+            <a href="#Pricing" class="nav-link">Pricing</a>
+        </nav>
+    </header>
+
+    <main class="main">
+        <h1 id="Our-Mission">ACME Corp</h1>
+        <h2>Our Mission</h2>
+        <div class="wrap">
+            <p>
+                Here at Acme Corp our mission is to provide state of the art gadgets and tools to anyone and everyone.
+            </p>
+            <p>
+                Our
+                products are the very best on the market, no matter the niche, and we make
+                <strong>
+                    a lot
+                </strong> of stuff,
+                like basically everything at this point.
+            </p>
+        </div>
+        <h3>Subscribe to our newsletter</h3>
+        <p class="wrap">Interested in news about our latest products? Why not subscribe to our newsletter?</p>
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+            <input type="email" name="email" id="email" placeholder="Enter your email adress">
+            <input id="submit" class="btn" type="submit" value="Subscribe">
+        </form>
+
+        <div id="Showcase">
+            <h2>Showcase</h2>
+            <p class="wrap">
+                We've commissioned our good friend Wile E. Coyote to showcase the quality of our products in a short
+                video. Enjoy the show!
+            </p>
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/9m7evoFF83c" frameborder="0"
+                allowfullscreen="">
+            </iframe>
+        </div>
+
+        <div id="Pricing">
+            <h2>Pricing</h2>
+            <div class="pricing-wrap">
+                <div class="card">
+                    <h2 class="product-name">Dynamite</h2>
+                    <h3 class="product-price">$399</h3>
+                    <p>Lorem ipsum.</p>
+                    <p>Lorem ipsum.</p>
+                    <p>Lorem ipsum.</p>
+                    <button class="btn pricing-btn">Buy now</button>
+                </div>
+                <div class="card">
+                    <h2 class="product-name">Invisible Paint</h2>
+                    <h3 class="product-price">$599</h3>
+                    <p>Lorem ipsum.</p>
+                    <p>Lorem ipsum.</p>
+                    <p>Lorem ipsum.</p>
+                    <button class="btn pricing-btn">Buy now</button>
+                </div>
+                <div class="card">
+                    <h2 class="product-name">The Anvil</h2>
+                    <h3 class="product-price">$999</h3>
+                    <p>Lorem ipsum.</p>
+                    <p>Lorem ipsum.</p>
+                    <p>Lorem ipsum.</p>
+                    <button class="btn pricing-btn">Buy now</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer class="footer">
+        <p>©Copyright ACME Corp 19XX-20XX</p>
+        <div class="footer-links">
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="#" class="footer-link">Terms of Use</a>
+            <a href="#" class="footer-link">Contact</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
